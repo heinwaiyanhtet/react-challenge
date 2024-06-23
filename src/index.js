@@ -6,6 +6,7 @@ import App from "./app.js";
 
 const root = createRoot(document.getElementById("root"));
 
+
 let h1 = React.createElement('h1', null, 'Hello world!')
 
 class HelloWorld extends React.Component
@@ -20,10 +21,17 @@ class HelloWorld extends React.Component
 root.render(
 
 
-React.createElement(HelloWorld, null),
+  React.createElement
+  (
+     'div',
+     null,
+     React.createElement(HelloWorld),
+     React.createElement(HelloWorld),
+     React.createElement(HelloWorld)
+  ),
 
 
-document.getElementById('content')
+  document.getElementById('content')
 
   // <StrictMode>
   //   <App />

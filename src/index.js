@@ -4,19 +4,24 @@ import "./styles.css";
 import App from "./app.js";
 
 
-// const root = createRoot(document.getElementById("root"));
-
-// root.render(
-
-//   <StrictMode>
-//     <App />
-//   </StrictMode>
-
-// );
 
 
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
+
+  <StrictMode>
+    <App />
+  </StrictMode>
+
+);
 
 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 // const root = createRoot(document.getElementById("root"));
@@ -48,40 +53,41 @@ import App from "./app.js";
 
 
 
-
-
-const root = createRoot(document.getElementById("root"));
-
-class HelloWorld extends React.Component{
-
-    render()
-    {
-        return React.createElement(
-            'h1',
-            this.props,
-            'Hello ' + this.props.frameworkName + ' World!!!' 
-        )
-    }
-
-}
-
-root.render(
-
-    React.createElement(
-
-        'div',
-         null,
-        React.createElement(HelloWorld,{
-           id : "ember",
-           frameworkName : "Ember.js",
-           title : 'A framework for creating ambitious web applications.'
-        }),
-
-
-        document.getElementById('content')
-
-    )
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
-)
+// const root = createRoot(document.getElementById("root"));
+
+// class HelloWorld extends React.Component{
+
+//     render()
+//     {
+//         return React.createElement(
+//             'h1',
+//             this.props,
+//             'Hello ' + this.props.frameworkName + ' World!!!' 
+//         )
+//     }
+
+// }
+
+// root.render(
+
+//     React.createElement(
+
+//         'div',
+//          null,
+//         React.createElement(HelloWorld,{
+//            id : "ember",
+//            frameworkName : "Ember.js",
+//            title : 'A framework for creating ambitious web applications.'
+//         }),
+//         document.getElementById('content')
+//     )
+// )
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
